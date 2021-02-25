@@ -90,6 +90,7 @@ dependencies {
 
 jar {
   from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+  baseName 'sha2sha3256'
 }
 
 wrapper {
